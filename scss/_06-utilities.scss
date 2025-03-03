@@ -1,0 +1,70 @@
+$colors: (
+  "dark": $clr-dark,
+  "light": $clr-light,
+  "gray": $clr-gray,
+  "lg": $clr-1-gray,
+  "slmn": $clr-salmon,
+  "transparent": $transparent,
+);
+
+@each $key, $val in $colors {
+  .bg {
+    &--#{$key} {
+      background-color: $val;
+    }
+  }
+
+  .text {
+    &--#{$key} {
+      color: $val;
+    }
+  }
+
+  .hvr {
+    &--#{$key} {
+      &:hover {
+        color: $val;
+      }
+    }
+  }
+
+  .btn-bg--#{$key} {
+    @include btn($val);
+  }
+}
+
+$displays: flex, inline-block, block, inline, grid, none;
+
+@each $display in $displays {
+  .d {
+    &--#{$display} {
+      display: $display;
+    }
+  }
+}
+
+@for $i from 1 through 20 {
+  .mb--#{$i} {
+    margin-bottom: $i + rem;
+  }
+
+  .mt--#{$i} {
+    margin-top: $i + rem;
+  }
+
+  .mr--#{$i} {
+    margin-right: $i + rem;
+  }
+
+  .ml--#{$i} {
+    margin-left: $i + rem;
+  }
+
+  .py--#{$i} {
+    padding: $i + rem 0;
+  }
+
+  .px--#{$i} {
+    padding: 0 $i + rem;
+  }
+}
