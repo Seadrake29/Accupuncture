@@ -28,7 +28,7 @@ $colors: (
     }
   }
 
-  .btn-bg--#{$key} {
+  .btn.bg--#{$key} {
     @include btn($val);
   }
 }

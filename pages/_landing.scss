@@ -1,0 +1,90 @@
+.banner {
+  height: 80vh;
+  padding-top: 10rem;
+  text-align: center;
+  color: $clr-light;
+  position: relative;
+  z-index: -1;
+
+  img {
+    @include imgFit(100%, 70vh);
+  }
+
+  &__text {
+    position: absolute;
+    top: 18rem;
+    left: 0;
+    margin: 0 5rem;
+    h2 {
+      font-size: 4rem;
+    }
+    p {
+      margin: 2rem 0;
+    }
+  }
+
+  &__btn {
+    padding: 2rem 0;
+    border-top: 2px solid $clr-light;
+
+    h2 {
+      font-size: 4rem;
+      margin-bottom: 2rem;
+    }
+    a {
+      border-radius: 5rem;
+      width: 100%;
+      font-size: 2rem;
+      font-weight: bolder;
+    }
+  }
+
+  @include mediaQuery($break-sm) {
+    height: 80vh;
+    padding-top: 10rem;
+    background-image: url("/img/banner.jpg");
+
+    background-size: cover;
+
+    img {
+      display: none;
+    }
+
+    &__text {
+      position: unset;
+      margin: 15rem 10rem;
+
+      h2 {
+        font-size: 6rem;
+      }
+
+      p {
+        font-size: 2rem;
+      }
+    }
+
+    &__btn {
+      border: none;
+      position: relative;
+
+      &::before {
+        content: "";
+        top: 0.5rem;
+        left: 35rem;
+        width: 50rem;
+        height: 0.3rem;
+        background: $clr-light;
+        position: absolute;
+      }
+
+      h2 {
+        font-size: 4.5rem;
+      }
+
+      a {
+        width: unset;
+        padding: 1.5rem 5rem;
+      }
+    }
+  }
+}

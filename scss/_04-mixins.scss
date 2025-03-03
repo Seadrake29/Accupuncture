@@ -13,7 +13,7 @@
 }
 
 @mixin btn($bg) {
-  display: block;
+  display: inline-block;
   padding: 1rem 1.6rem;
   border-radius: 0.5rem;
   color: $clr-light;
@@ -25,4 +25,17 @@
   display: grid;
   grid-template-columns: repeat($cols, 1fr);
   grid-gap: $gap;
+}
+
+@mixin centerAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: $height;
+}
+
+@mixin centerBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
