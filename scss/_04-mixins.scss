@@ -27,6 +27,12 @@
   grid-gap: $gap;
 }
 
+@mixin gridUneven($cols: 1, $gap: 1rem) {
+  display: grid;
+  grid-template-columns: $cols;
+  grid-gap: $gap;
+}
+
 @mixin centerAll {
   display: flex;
   justify-content: center;

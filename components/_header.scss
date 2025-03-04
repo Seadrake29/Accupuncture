@@ -40,6 +40,11 @@
         }
       }
     }
+
+    a:hover {
+      color: $clr-salmon;
+      border-bottom: 1px solid $clr-salmon;
+    }
   }
 
   .toggle__menu {
