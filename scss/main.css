@@ -907,6 +907,7 @@ body {
 .faq {
   border-bottom: 20px solid #e75f66;
   line-height: 2;
+  background-color: #f2f7f3;
 }
 .faq__wrapper h2 {
   font-size: 3rem;
@@ -917,6 +918,68 @@ body {
   margin-bottom: 2rem;
   margin-top: 2rem;
   font-size: 2rem;
+}
+
+.map {
+  background-color: #2e2e2e;
+}
+.map__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8rem;
+  align-items: center;
+}
+.map__content {
+  color: #fff;
+}
+.map__content h2 {
+  font-size: 4rem;
+}
+.map__content h4 {
+  font-weight: bolder;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+.map__content__text {
+  line-height: 1.5;
+}
+.map__content__text ul {
+  margin: 3.5rem 0;
+}
+.map__content__text ul li {
+  font-size: 1.8rem;
+}
+.map__content__text hr {
+  border: 1px solid #e75f66;
+  width: 60%;
+}
+
+.footer {
+  background-color: #e75f66;
+}
+.footer__wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__wrapper ul li {
+  padding: 0 3rem;
+  border-right: 2px solid #fff;
+}
+.footer__wrapper ul li:last-child {
+  border-right: none;
+}
+.footer__wrapper ul a {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.footer__wrapper .copyright {
+  padding-top: 5rem;
+  text-align: center;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 1.6rem;
 }
 
 .header {

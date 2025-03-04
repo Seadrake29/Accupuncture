@@ -298,6 +298,7 @@
 .faq {
   border-bottom: 20px solid $clr-salmon;
   line-height: 2;
+  background-color: $clr-1-gray;
   &__wrapper {
     h2 {
       font-size: 3rem;
@@ -315,4 +316,81 @@
 
 // End of FAQ CSS
 
-// Start of
+// Start of map
+
+.map {
+  background-color: $clr-dark;
+
+  &__wrapper {
+    @include grid(2, 8rem);
+    align-items: center;
+  }
+
+  &__content {
+    color: $clr-light;
+
+    h2 {
+      font-size: 4rem;
+    }
+
+    h4 {
+      font-weight: bolder;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__text {
+      line-height: 1.5;
+      ul {
+        margin: 3.5rem 0;
+      }
+
+      ul li {
+        font-size: 1.8rem;
+      }
+
+      hr {
+        border: 1px solid $clr-salmon;
+        width: 60%;
+      }
+    }
+  }
+}
+
+// End of Map CSS
+
+//Start of footer
+.footer {
+  background-color: $clr-salmon;
+
+  &__wrapper {
+    ul {
+      @include centerBetween;
+
+      li {
+        padding: 0 3rem;
+        border-right: 2px solid $clr-light;
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+
+      a {
+        color: $clr-light;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+
+    .copyright {
+      padding-top: 5rem;
+      text-align: center;
+      color: $clr-light;
+      font-weight: bolder;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+//End of footer
