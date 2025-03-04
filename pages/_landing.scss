@@ -322,7 +322,7 @@
   background-color: $clr-dark;
 
   &__wrapper {
-    @include grid(2, 8rem);
+    @include grid(2, 15rem);
     align-items: center;
   }
 
@@ -330,7 +330,7 @@
     color: $clr-light;
 
     h2 {
-      font-size: 4rem;
+      font-size: 3rem;
     }
 
     h4 {
@@ -342,7 +342,7 @@
     &__text {
       line-height: 1.5;
       ul {
-        margin: 3.5rem 0;
+        margin: 2rem 0;
       }
 
       ul li {
@@ -351,7 +351,7 @@
 
       hr {
         border: 1px solid $clr-salmon;
-        width: 60%;
+        width: 85%;
       }
     }
   }
@@ -384,7 +384,7 @@
     }
 
     .copyright {
-      padding-top: 5rem;
+      padding-top: 4rem;
       text-align: center;
       color: $clr-light;
       font-weight: bolder;

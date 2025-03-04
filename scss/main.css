@@ -926,14 +926,14 @@ body {
 .map__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 8rem;
+  grid-gap: 15rem;
   align-items: center;
 }
 .map__content {
   color: #fff;
 }
 .map__content h2 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .map__content h4 {
   font-weight: bolder;
@@ -944,14 +944,14 @@ body {
   line-height: 1.5;
 }
 .map__content__text ul {
-  margin: 3.5rem 0;
+  margin: 2rem 0;
 }
 .map__content__text ul li {
   font-size: 1.8rem;
 }
 .map__content__text hr {
   border: 1px solid #e75f66;
-  width: 60%;
+  width: 85%;
 }
 
 .footer {
@@ -975,7 +975,7 @@ body {
   font-weight: bold;
 }
 .footer__wrapper .copyright {
-  padding-top: 5rem;
+  padding-top: 4rem;
   text-align: center;
   color: #fff;
   font-weight: bolder;
